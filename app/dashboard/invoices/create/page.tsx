@@ -7,7 +7,7 @@ export default async function Page() {
  
   return (
     <main>
-      <Breadcrumbsx
+      <Breadcrumbs
         breadcrumbs={[
           { label: 'Invoices', href: '/dashboard/invoices' },
           {
