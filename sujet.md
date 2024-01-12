@@ -26,6 +26,7 @@ Ajout d'un élément dans le tableau links du fichier nav-links.tsx
    Note : le composant Card a une prop 'type' pour laquelle vous utiliserez une des valeurs déjà utilisée pour les autres cartes.
    Note 2 : ce n'est pas grave si l'ajout de la carte "désorganise" un peu l'interface. Et on ne vous demande pas de modifier le cardsSkeleton en conséquence.
 
+Modification des fichiers cards.tsx et data.ts pour ajouter une carte highest invoice et une manière de déterminer le montant de la facture la plus élevée.
 
 4. /dashboard/customers
    Afficher sur cette page la liste des clients en présentant dans une table leur identifiant, son image de profil, leur prénom et nom, leur adresse email.
