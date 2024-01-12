@@ -34,7 +34,7 @@ Modification des fichiers cards.tsx et data.ts pour ajouter une carte highest in
    Note : basez-vous sur /dashboard/invoices. Vous pouvez reprendre des composants déjà présents ou si besoin en dupliquer/modifier 
    pour l'adapater aux données.
 
-Modification de dashboard/customers/page.tsx en partant de dashboard/invoice/page.tsx on enlève la pagination et la recherche
+Modification de dashboard/customers/page.tsx en partant de dashboard/invoice/page.tsx on enlève la pagination et la recherche puis on utilise customersTable pour récuperer et afficher les clients.
 
 
 

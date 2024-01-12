@@ -1,5 +1,5 @@
 import { Suspense } from 'react';
-import { fetchCustomers } from '@/app/lib/data';
+import { fetchCustomers } from '@/app/lib/data'; // Assuming you've exported CustomerField from your data module
 import { lusitana } from '@/app/ui/fonts';
 import CustomersTable from '@/app/ui/customers/table';
 import { InvoicesTableSkeleton } from '@/app/ui/skeletons';
@@ -21,8 +21,6 @@ export default async function Page({
     <div className="w-full">
       <div className="flex w-full items-center justify-between">
         <h1 className={`${lusitana.className} text-2xl`}>Customers</h1>
-      </div>
-      <div className="mt-4 flex items-center justify-between gap-2 md:mt-8">
       </div>
       <Suspense key={query + currentPage} fallback={<InvoicesTableSkeleton />}>
         <CustomersTable customers={customersData} />
