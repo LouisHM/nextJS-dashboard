@@ -225,6 +225,8 @@ export async function fetchFilteredCustomers(query: string) {
       ...customer,
       total_pending: formatCurrency(customer.total_pending),
       total_paid: formatCurrency(customer.total_paid),
+      invoices_paid: customer.invoices_paid,
+      invoices_pending: customer.invoices_pending,
     }));
 
     return customers;
