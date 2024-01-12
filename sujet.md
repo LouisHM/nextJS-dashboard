@@ -35,6 +35,8 @@ Modification des fichiers cards.tsx et data.ts pour ajouter une carte highest in
    pour l'adapater aux données.
 
 
+
+
 5. /dashboard/customers
    Modifier votre affichage pour faire apparaître en plus pour chaque client le nombre de factures qu'il a déjà payé et le nombre
    de facture qu'il lui reste encore à payer.

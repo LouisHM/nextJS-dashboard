@@ -67,27 +67,27 @@ export async function fetchCardData() {
          SUM(CASE WHEN status = 'paid' THEN amount ELSE 0 END) AS "paid",
          SUM(CASE WHEN status = 'pending' THEN amount ELSE 0 END) AS "pending"
          FROM invoices`;
-    // const highestInvoicePromise = sql`SELECT MAX(amount) AS highest_invoice FROM invoices`;
+    const highestInvoicePromise = sql`SELECT MAX(amount) AS "highest_invoice" FROM invoices`;
 
     const data = await Promise.all([
       invoiceCountPromise,
       customerCountPromise,
       invoiceStatusPromise,
-      // highestInvoicePromise,
+      highestInvoicePromise,
     ]);
 
     const numberOfInvoices = Number(data[0].rows[0].count ?? '0');
     const numberOfCustomers = Number(data[1].rows[0].count ?? '0');
     const totalPaidInvoices = formatCurrency(data[2].rows[0].paid ?? '0');
     const totalPendingInvoices = formatCurrency(data[2].rows[0].pending ?? '0');
-    // const highestInvoice = formatCurrency(data[3].rows[0].highest_invoice ?? '0');
-
+    const highestInvoice = formatCurrency(data[3].rows[0].highest_invoice ?? '0');
+    
     return {
       numberOfCustomers,
       numberOfInvoices,
       totalPaidInvoices,
       totalPendingInvoices,
-      // highestInvoice,
+      highestInvoice,
     };
   } catch (error) {
     console.error('Database Error:', error);
