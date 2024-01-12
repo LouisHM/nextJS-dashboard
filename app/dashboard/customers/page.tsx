@@ -1,9 +1,9 @@
+// Page component
 import { Suspense } from 'react';
-import { fetchCustomers } from '@/app/lib/data'; // Assuming you've exported CustomerField from your data module
+import { fetchCustomers, CustomerField } from '@/app/lib/data';
 import { lusitana } from '@/app/ui/fonts';
 import CustomersTable from '@/app/ui/customers/table';
 import { InvoicesTableSkeleton } from '@/app/ui/skeletons';
-import { FormattedCustomersTable } from '@/app/lib/definitions';
 
 export default async function Page({
   searchParams,
