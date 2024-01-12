@@ -42,6 +42,7 @@ Modification de dashboard/customers/page.tsx en partant de dashboard/invoice/pag
    Modifier votre affichage pour faire apparaître en plus pour chaque client le nombre de factures qu'il a déjà payé et le nombre
    de facture qu'il lui reste encore à payer.
 
+j'ai modifié la fonction fetchFilered Customers pour lui ajouter le nombre de factures payés et en attente puis la table customer pour ajoouter les colones correspondantes
 
 6. /dashboard/customers
    Ajouter un bouton qui permet de saisir et enregistrer un nouveau client. Là encore, basez-vous sur /dashboard/invoices.
