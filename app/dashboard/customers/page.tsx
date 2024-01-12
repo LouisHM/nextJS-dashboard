@@ -3,6 +3,7 @@ import { fetchCustomers } from '@/app/lib/data'; // Assuming you've exported Cus
 import { lusitana } from '@/app/ui/fonts';
 import CustomersTable from '@/app/ui/customers/table';
 import { InvoicesTableSkeleton } from '@/app/ui/skeletons';
+import { FormattedCustomersTable } from '@/app/lib/definitions';
 
 export default async function Page({
   searchParams,
