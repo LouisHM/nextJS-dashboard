@@ -1,5 +1,6 @@
 // page.tsx
 import { Suspense } from 'react';
+import { CreateCustomer } from '@/app/ui/customers/buttons';
 import { fetchFilteredCustomers } from '@/app/lib/data';
 import { lusitana } from '@/app/ui/fonts';
 import Table from '@/app/ui/customers/table';
@@ -23,6 +24,7 @@ export default async function Page({
         <div className="flex w-full items-center justify-between">
           <h1 className={`${lusitana.className} text-2xl`}>Customers</h1>
         </div>
+        <CreateCustomer />
         <Suspense fallback={<InvoicesTableSkeleton />}>
           <Table customers={customersData} />
         </Suspense>

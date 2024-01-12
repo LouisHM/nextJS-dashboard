@@ -48,3 +48,7 @@ j'ai modifié la fonction fetchFileredCustomers dans data.ts pour lui ajouter le
    Ajouter un bouton qui permet de saisir et enregistrer un nouveau client. Là encore, basez-vous sur /dashboard/invoices.
    Note : pour vous simplifier un peu les choses, on ne vous demande pas de gérer l'upload d'une image de profil. Vous pouvez
    directement saisir son path. Et ne perdez pas de temps à chercher des images... dupliquez et renommez celles déjà présentes.
+
+TODO:
+   ajouter un bouton qui dirige vers l'url dashboard/customers/create 
+   ajouter un dossier create dans customers et une page avec un formulaire ou l'on rentre les informations souhaités
