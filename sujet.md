@@ -51,4 +51,5 @@ j'ai modifié la fonction fetchFileredCustomers dans data.ts pour lui ajouter le
 
 TODO:
    ajouter un bouton qui dirige vers l'url dashboard/customers/create 
-   ajouter un dossier create dans customers et une page avec un formulaire ou l'on rentre les informations souhaités
+   créer un formulaire de création de client
+   ajouter un dossier create dans customers et une page avec le formulaire ou l'on rentre les informations souhaités
