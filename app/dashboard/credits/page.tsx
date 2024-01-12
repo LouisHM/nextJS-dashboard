@@ -1,3 +1,3 @@
 export default function Page() {
-    return <p>"Cet examen est l'oeuvre de Louis Maury !"</p>;
+    return <p>Cet examen à été réalisé par Louis Maury !</p>;
 }
