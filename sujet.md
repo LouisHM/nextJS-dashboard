@@ -18,6 +18,8 @@ Ajout d'un dossier credits et d'un fichier page.tsx dans lequel on ajoute les é
 2. Modifier la barre latérale de navigation pour ajouter un menu 'Crédits' en plus de 'Home', 'Invoices' et 'Customers'.
    Ce nouveau menu renverra bien entendu vers /dashboard/credits 
 
+Ajout d'un élément dans le tableau links du fichier nav-links.tsx
+
 
 3. /dashboard
    Ajouter une "carte" qui indique le plus gros montant de toutes les factures déjà payées.
